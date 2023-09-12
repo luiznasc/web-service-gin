@@ -1,10 +1,10 @@
 package main
 
-import {
+import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"	
-}
+)
 
 type album struct {
 	ID string 'json:"id"'
@@ -19,6 +19,4 @@ var albums= []album {
 	{ID: "3", Title: "Sarah Vaughan and Clifford Brown", Artist: "Sarah Vaughan", Price: 39.99},
 }
 
-func main() {
-	print(albums)
-}
+
